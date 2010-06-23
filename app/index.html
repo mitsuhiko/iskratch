@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en" manifest="cache.manifest">
+<meta charset=utf-8>
+<title>iSkratch 2000</title>
+<link rel=stylesheet type=text/css href="js/jqtouch/jqtouch.min.css">
+<link rel=stylesheet type=text/css href="css/theme/theme.css">
+<link rel=stylesheet type=text/css href="css/style.css">
+<script src="js/jqtouch/jquery.1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jqtouch/jqtouch.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/classy.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/isknodes.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/runtime.js" type="text/javascript" charset="utf-8"></script>
+
+<div id=home selected=true class=form>
+  <div class=toolbar>
+    <h1>iSkratch 2000</h1>
+    <a href="#about" class="about slideup">Info</a>
+  </div>
+  <form action="" method=post>
+    <ul>
+      <li class=arrow><a href=#canvas class=push>Neues Projekt</a>
+    </ul>
+  </form>
+</div>
+
+<div id=about>
+  <div class=toolbar>
+    <a href=# class=cancel>Schließen</a>
+    <h1>Info</h1>
+  </div>
+  <div class=panel>
+    <h3>iSkratch 2000</h3>
+    <p>Eine Visuelle Programmiersprache für Kinder.
+    <p>Created by the iCollective
+  </div>
+</div>
+
+<div id=canvas>
+  <div class="toolbar">
+    <a href=# class="back">Menu</a>
+    <h1>Unbenannt #1</h1>
+    <a href=#play class="play slideup">&nbsp;►&nbsp;</a>
+  </div>
+  <form action="" method="post">
+    <ul>
+      <li><a href="#new-object" class=slideup>Neues Objekt</a></li>
+    </ul>
+    <ul class=objectlist>
+      <li><a href="#objects" class=push>Fisch</a></li>
+      <li><a href="#objects" class=push>Octopus</a></li>
+      <li><a href="#objects" class=push>Bühne</a></li>
+    </ul>
+  </form>
+</div>
+
+<div id="statement">
+  <div class="toolbar">
+    <h1>Statement</h1>
+    <a href=# class=cancel>Abbrechen</a>
+  </div>
+  <form action="" method="post">
+    <ul class=edgetoedge>
+    </ul>
+  </form>
+</div>
+
+<div id="expression">
+  <div class="toolbar">
+    <h1>Expression</h1>
+    <a href=# class="cancel">Abbrechen</a>
+  </div>
+  <form action="" method="post">
+    <ul class=edgetoedge>
+    </ul>
+  </form>
+</div>
+
+<div id=objects>
+  <div class="toolbar">
+    <a href=# class="back">Zurück</a>
+    <h1>Object</h1>
+    <a href=#edit-object class="slideup button">Bearbeiten</a>
+  </div>
+  <form action="" method="post">
+    <ul>
+      <li class="arrow"><a href=#costumes class="push">Kostüme</a>
+      <li class="arrow"><a href=#script class="push">Ablauf</a>
+    </ul>
+  </form>
+</div>
+
+<div id=new-object>
+  <div class="toolbar">
+    <a href=# class=cancel>Abbrechen</a>
+    <h1>Neues Objekt</h1>
+    <a href=# class=add><b>&nbsp;&#10010;&nbsp;</b></a>
+  </div>
+  <form action="" method="post">
+    <ul>
+      <li><input type=text name=name placeholder="Object Name">
+    </ul>
+  </form>
+</div>
+
+<div id=edit-object>
+  <div class="toolbar">
+    <a href=# class=cancel>Abbrechen</a>
+    <h1>Objekt Bearbeiten</h1>
+    <a href=# class=add>Speichern</a>
+  </div>
+  <form action="" method="post">
+    <ul>
+      <li class=caption>Umbenennen...
+      <li><input type=text name=name placeholder="Object Name">
+      <a href=# class=delete>löschen</a>
+    </ul>
+  </form>
+</div>
+
+<div id="costumes">
+	<div class="toolbar">
+		<h1>Kostüme</h1>
+    <a href="#" class="back">Zurück</a>
+    <a href="#add-costumes" class="add slideup"><b>&nbsp;&#10010;&nbsp;</b></a>
+  </div>
+  <ul class="edgetoedge imagelist"></ul>
+</div>
+
+<div id="script">
+	<div class="toolbar">
+		<h1>Ablauf</h1>
+    <a href="#objects" class="back">Zurück</a>
+    <a href="#statement" class="add slideup"><b>&nbsp;&#10010;&nbsp;</b></a>
+  </div>
+  <div class=scriptholder></div>
+</div>
+
+<div id=play>
+  <div class="toolbar">
+    <a href=# class=cancel>&nbsp;&#10006;&nbsp;</a>
+    <h1>Wiedergabe</h1>
+  </div>
+  <canvas id=player width=320 height=428></canvas>
+</div>
+
+<div id="add-costumes">
+	<div class="toolbar">
+		<h1>Kostüm hinzufügen</h1>
+		<a href="#costumes" class="cancel">Abbrechen</a>
+		<a href="#" class="add"><b>&nbsp;&#10010;&nbsp;</b></a>
+	</div>
+	<form action="" method="post">
+    <ul class="edgetoedge imagelist">
+    </ul>
+  </form>
+</div>
+
+<div id="edit-costumes">
+  <div class="toolbar">
+    <h1>Kostüm bearbeiten</h1>
+    <a href="#costumes" class="cancel">Abbrechen</a>
+  </div>
+</div>

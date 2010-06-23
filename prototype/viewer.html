@@ -1,0 +1,15 @@
+<!doctype html>
+<title>iSkratch Application Viewer</title>
+<script type=text/javascript src=jquery.js></script>
+<script type=text/javascript src=classy.js></script>
+<script type=text/javascript src=runtime.js></script>
+<script type=text/javascript src=application.js></script>
+<script type=text/javascript>
+  $(function() {
+    (new ISKApplication('#whiteboard')).run();
+  });
+</script>
+<h1>iSkratch Application Viewer</h1>
+<canvas id=whiteboard width=640, height=480>
+  A HTML5 supporting browser is required.
+</canvas>

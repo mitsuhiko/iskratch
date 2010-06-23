@@ -1,0 +1,128 @@
+div.scriptholder {
+    padding: 0px 10px 15px 10px;
+    font-size: 15px;
+}
+
+div.scriptholder span.expr div.node,
+div.scriptholder span.expr div.box {
+    display: inline;
+}
+
+div.scriptholder span.expr div.box {
+    padding: 0 3px!important;
+}
+
+div.scriptholder div.node input {
+    border: none;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+div.scriptholder div.node input:focus {
+    outline: none;
+}
+
+div.scriptholder div.node div.node > div.node {
+    margin: 10px 0 20px 0;
+}
+
+div.scriptholder div.node div.node div.node div.box {
+    padding: 3px 10px;
+    -webkit-border-radius: 2px;
+}
+
+div.scriptholder div.node a.delete {
+    display: block;
+    background: #DD0000;
+    border: 1px solid #AD0000;
+    color: white;
+    -webkit-border-radius: 2px;
+    float: right;
+    margin: 2px;
+    padding: 0 4px;
+    font-weight: bold;
+    line-height: 18px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+div.scriptholder div.node span.expr a.delete {
+    float: none!important;
+    display: inline!important;
+}
+
+div.scriptholder div.box-generic {
+    border: 1px solid #1F9C1F;
+    background: #3CBE3C;
+    color: white;
+}
+
+div.scriptholder div.box-loop {
+    border: 1px solid #F2A41D;
+    background: #F2C81D;
+    color: #111;
+}
+
+div.scriptholder div.box-control {
+    border: 1px solid #646464;
+    background: #868686;
+    color: white;
+}
+
+div.scriptholder div.box-const {
+    border: 1px solid #ddd;
+    background: white;
+    color: #333;
+}
+
+div.scriptholder div.box-sensor {
+    border: 1px solid #307316;
+    background: #6ADB3D;
+    color: #296611;
+}
+
+div.scriptholder div.box-math {
+    border: 1px solid #2DB1AC;
+    background: #3FDBD6;
+    color: #167470;
+}
+
+div.scriptholder div.nested {
+    margin: 0 -11px 6px 10px;
+    padding: 4px;
+    border: 1px solid #F2A41D;
+    border-right: none;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#555), to(#777));
+}
+
+div.scriptholder div.nested div.node {
+    margin: 0!important;
+}
+
+div.scriptholder div.node a.placeholder {
+    border: 1px solid #C01A1A;
+    background: #F31D1D;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+div.scriptholder div.node div.bar {
+    line-height: 24px;
+}
+
+div.scriptholder div.node div.stmt > a.placeholder {
+    display: block;
+    padding: 2px 0;
+    margin: -4px 0 0 0;
+    text-align: center;
+    -webkit-border-bottom-left-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+}
+
+div.scriptholder div.node span.expr > a.placeholder {
+    display: inline;
+    padding: 0 3px;
+    -webkit-border-radius: 4px;
+}
