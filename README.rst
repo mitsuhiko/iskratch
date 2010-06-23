@@ -17,4 +17,8 @@ semantics.
 The most interesting part is probably still the original prototoype that
 is written in Python and generates a JavaScript file from an AST tree.
 
+Another thing: last minute things were translated to German and I did not
+yet revert these changes (and quite frankly I doubt I ever will) and I got
+rid of the useless unittests.
+
 Licensed under the BSD license, see LICENSE for more details.
